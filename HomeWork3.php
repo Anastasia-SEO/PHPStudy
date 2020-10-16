@@ -1,5 +1,6 @@
 <?php
 
+
 $task_manager = [
     [
         'ID' => 1998,
@@ -39,6 +40,46 @@ $task_manager = [
         'status' => 'Done',
     ],
 ];
-var_dump($task_manager);
 
+//Home_Work loops
+//for ($i = 1; $i <= 5; $i++)
+//    var_dump($i);
+//
+//foreach ($task_manager as $task_manager) {
+//    echo "#{$task_manager['ID']}: {$task_manager['title']}: {$task_manager['description']}: {$task_manager['owner']}:
+//    {$task_manager['deadline']}: {$task_manager['status']}:", PHP_EOL;
+//}
+//
+//foreach ($task_manager as $key => $value) {
+//    echo "{$key}: {$value}", PHP_EOL;
+//}
 
+?>
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task Manager</title>
+  <style>
+        table {
+            width: 100%;
+            background: cadetblue;
+            color: black;
+            border-spacing: 1px;
+        }
+        td, th {
+            background: cadetblue;
+            padding: 5px;
+        }
+  </style>
+</head>
+<body>
+ <table>
+    <?=$task_manager ?>
+ </table>
+</body>
+</html>
