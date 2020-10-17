@@ -9,12 +9,12 @@
     <style>
         table {
             width: 100%;
-            background: green;
+            background: darkred;
             color: black;
-            border-spacing: 2px;
+            border-spacing: 3px;
         }
         td, th {
-            background: lightblue;
+            background: whitesmoke;
             padding: 6px;
         }
     </style>
@@ -69,15 +69,19 @@
             'status' => 'Done',
         ],
     ];
-    foreach ($task_manager as $task_manager) {
-        echo "#<tr>
-    <td>{$task_manager['ID']}</td>: 
-    <td>{$task_manager['title']}</td>:
-    <td>{$task_manager['description']}</td>:
-    <td>{$task_manager['owner']}</td>:
-    <td>{$task_manager['deadline']}</td>:
-    <td>{$task_manager['status']}</td>:";
+    for ($i = 0; $i <= 4; $i++) {
+        echo "<tr>
+    <td>{$task_manager[$i]['ID']}</td>: 
+    <td>{$task_manager[$i]['title']}</td>:
+    <td>{$task_manager[$i]['description']}</td>:
+    <td>{$task_manager[$i]['owner']}</td>:
+    <td>{$task_manager[$i]['deadline']}</td>:
+    <td>{$task_manager[$i]['status']}</td>:";
     }
     ?>
 </body>
 </html>
+
+
+
+
