@@ -45,41 +45,21 @@ $task_manager = [
 //for ($i = 1; $i <= 5; $i++)
 //    var_dump($i);
 //
-//foreach ($task_manager as $task_manager) {
-//    echo "#{$task_manager['ID']}: {$task_manager['title']}: {$task_manager['description']}: {$task_manager['owner']}:
-//    {$task_manager['deadline']}: {$task_manager['status']}:", PHP_EOL;
-//}
-//
+
+echo '<table>';
+foreach ($task_manager as $task_manager) {
+    echo "#<td>{$task_manager['ID']}</td>: <td>{$task_manager['title']}</td>: <td>{$task_manager['description']}</td>: 
+<td>{$task_manager['owner']}</td>:
+    <td>{$task_manager['deadline']}</td>: <td>{$task_manager['status']}</td>:", PHP_EOL;
+}
+echo '</table>';
+
+//echo '</table>';
 //foreach ($task_manager as $key => $value) {
 //    echo "{$key}: {$value}", PHP_EOL;
 //}
+//echo '</table>';
 
-?>
 
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Task Manager</title>
-  <style>
-        table {
-            width: 100%;
-            background: cadetblue;
-            color: black;
-            border-spacing: 1px;
-        }
-        td, th {
-            background: cadetblue;
-            padding: 5px;
-        }
-  </style>
-</head>
-<body>
- <table>
-    <?=$task_manager ?>
- </table>
-</body>
-</html>
+
+

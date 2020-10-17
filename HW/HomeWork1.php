@@ -16,4 +16,3 @@ if ($x == 3) {
 
 echo $number = ($number = 0 ? : ($number < 0 ? : ($number = 1 ? : ($number = 2 ? : ($number % 2 === 0 ? "Number {$number} is even" : "Number {$number} is odd")))));
 
-?>
